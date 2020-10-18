@@ -1,0 +1,159 @@
+/* main header bg color - 000000 */
+/* main text color - FFFFFF */
+/* section text color - 373737 */
+/* section secondary text color - 4E4E4E */
+/* button color - 00AFDB */
+/* main section color - FFFFFF */
+/* secondary section color - F5F6F7 */
+/* main footer color - 000000 */
+
+:root {
+  --primary-white-color: #ffffff;
+  --title-text-color: #373737;
+  --p-text-color: #4e4e4e;
+  --black-bg-color: #000000;
+  --button-color: #00afdb;
+  --secondary-bg-color: #f5f6f7;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+}
+
+/* utilities */
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 140px;
+}
+
+.setion-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: var(--title-text-color);
+}
+
+.section-text {
+  margin-top: 0;
+  margin-bottom: 30px;
+  line-height: 20px;
+  color: var(--p-text-color);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 109px;
+  padding-right: 109px;
+  width: 1200px;
+
+  outline: 2px solid tomato;
+}
+/* header */
+
+.page-header {
+  background-color: var(--black-bg-color);
+}
+
+.site-nav {
+  display: flex;
+  margin-right: 85px;
+}
+
+.site-nav .link {
+  display: flex;
+  align-items: center;
+  line-height: 1.42;
+  font-weight: 400;
+
+  padding-top: 38px;
+  padding-bottom: 37px;
+
+  color: var(--primary-white-color);
+
+  text-decoration: none;
+
+  opacity: 0.8;
+}
+
+.site-nav .link.current {
+  font-weight: 500;
+}
+
+.site-nav .item + .item {
+  margin-left: 85px;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--button-color);
+}
+/* hero */
+
+.hero {
+  background: grey;
+
+  text-align: center;
+}
+
+.hero-title {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+
+  /* need to change color */
+  color: var(--primary-white-color);
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: 25px;
+
+  text-align: center;
+
+  /* need to change color */
+  color: var(--primary-white-color);
+}
+
+.button {
+  padding: 15px 47px;
+  display: inline-block;
+  text-align: center;
+
+  color: var(--primary-white-color);
+  background-color: var(--button-color);
+
+  border: 1px solid transparent;
+
+  font-weight: bold;
+  /* min-width: 200px; */
+  line-height: 1.14;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
