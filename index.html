@@ -3,80 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
     <title>webdev</title>
   </head>
   <body>
     <!-- header -->
-    <header>
+    <header class="page-header">
       <nav>
-        <ul>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Syllabus</a></li>
-        </ul>
-        <a href="">logo</a>
-        <ul>
-          <li><a href="/">Projects</a></li>
-          <li><a href="/">FAQ</a></li>
-        </ul>
+        <div class="container">
+          <ul class="site-nav list">
+            <li class="item"><a class="link current" href="/">About</a></li>
+            <li class="item"><a class="link" href="/">Syllabus</a></li>
+          </ul>
+          <a href="">logo</a>
+          <ul class="site-nav list">
+            <li class="item"><a class="link" href="/">Projects</a></li>
+            <li class="item"><a class="link" href="/">FAQ</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <!-- hero -->
-    <section>
-      <h1>your life is WebDev</h1>
-      <p>
+    <div class="hero">
+      <h1 class="hero-title">your life is WebDev</h1>
+      <p class="hero-text">
         Whatever the approach to development may be, the final program must
         satisfy some fundamental properties
       </p>
-      <button type="button">get started</button>
+      <button class="button" type="button">get started</button>
 
       <!-- social list -->
-      <ul>
+      <ul class="list">
         <li></li>
         <li></li>
         <li></li>
         <li></li>
       </ul>
-    </section>
+    </div>
 
     <!-- section 1 -->
-    <section>
-      <h2>Rappresent your idea with a smart Design</h2>
-      <p>
-        Tasks accompanying and related to programming include: testing,
-        debugging, source code maintenance, implementation of build systems, and
-        management of derived artifacts, such as the machine code of computer
-        programs.
-      </p>
-      <button type="button">get started</button>
-      <img src="./images/content-image-1.jpg" alt="picture-1" />
+    <section class="section">
+      <div class="container">
+        <h2 class="setion-title">Rappresent your idea with a smart Design</h2>
+        <p class="section-text">
+          Tasks accompanying and related to programming include: testing,
+          debugging, source code maintenance, implementation of build systems,
+          and management of derived artifacts, such as the machine code of
+          computer programs.
+        </p>
+        <button class="button" type="button">get started</button>
+        <img src="./images/content-image-1.jpg" alt="picture-1" />
+      </div>
     </section>
 
     <!-- section 2 -->
 
-    <section>
-      <img src="./images/userpic-wrapper.jpg" alt="user-pic" />
-      <h3>our community</h3>
-      <p>
-        A hacker is any skilled computer expert that uses their technical
-        knowledge to overcome a problem, but it can also mean a security hacker
-        in common language
-      </p>
-      <img src="./images/slider-item.jpg" alt="slider-item" />
-      <img src="./images/slider-item(1).jpg" alt="slider-item" />
+    <section class="section">
+      <div class="container">
+        <img src="./images/userpic-wrapper.jpg" alt="user-pic" />
+        <h3>our community</h3>
+        <p class="section-text">
+          A hacker is any skilled computer expert that uses their technical
+          knowledge to overcome a problem, but it can also mean a security
+          hacker in common language
+        </p>
+        <img src="./images/slider-item.jpg" alt="slider-item" />
+        <img src="./images/slider-item(1).jpg" alt="slider-item" />
+      </div>
     </section>
 
     <!-- section 3 -->
-    <section>
-      <img src="./images/content-image-2.jpg" alt="" />
-      <h2>Implement right Code</h2>
-      <p>
-        These might be considered part of the programming process, but often the
-        term software development is used for this larger process with the term
-        programming, implementation
-      </p>
+    <section class="section">
+      <div class="section container">
+        <img src="./images/content-image-2.jpg" alt="" />
+        <h2 class="setion-title">Implement right Code</h2>
+        <p class="section-text">
+          These might be considered part of the programming process, but often
+          the term software development is used for this larger process with the
+          term programming, implementation
+        </p>
 
-      <button type="button">Learn more</button>
+        <button class="button" type="button">Learn more</button>
+      </div>
     </section>
 
     <!-- hero 2 -->
@@ -88,19 +103,21 @@
     </div>
 
     <!-- section 4 -->
-    <section>
-      <h2>Download the App</h2>
-      <p>
-        Machine code was the language of early programs, written in the
-        instruction set of the particular machine, often in binary notation.
-      </p>
-      <button type="button">apple store</button>
-      <button type="button">Play Market</button>
+    <section class="section">
+      <div class="container">
+        <h2 class="setion-title">Download the App</h2>
+        <p class="section-text">
+          Machine code was the language of early programs, written in the
+          instruction set of the particular machine, often in binary notation.
+        </p>
+        <button class="button" type="button">apple store</button>
+        <button class="button" type="button">Play Market</button>
+      </div>
     </section>
 
     <!-- footer -->
-    <footer>
-      <ul>
+    <footer class="container">
+      <ul class="list">
         <li>Credits</li>
         <li>Privacy</li>
         <li>Our teams</li>
