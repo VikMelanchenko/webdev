@@ -8,6 +8,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>webdev</title>
@@ -38,10 +44,10 @@
     <div class="hero">
       <h1 class="hero-title">your life is WebDev</h1>
       <p class="hero-text">
-        Whatever the approach to development may be, the final program must
-        satisfy some fundamental properties
+        Whatever the approach to development may be, the final <br />program
+        must satisfy some fundamental properties
       </p>
-      <button class="button" type="button">get started</button>
+      <button class="button-hero" type="button">get started</button>
 
       <!-- social list -->
       <ul class="social-list list">
@@ -79,15 +85,23 @@
     <!-- section 1 -->
     <section class="section">
       <div class="container">
-        <h2 class="setion-title">Rappresent your idea with a smart Design</h2>
-        <p class="section-text">
-          Tasks accompanying and related to programming include: testing,
-          debugging, source code maintenance, implementation of build systems,
-          and management of derived artifacts, such as the machine code of
-          computer programs.
-        </p>
-        <button class="button" type="button">get started</button>
-        <img src="./images/content-image-1.jpg" alt="picture-1" />
+        <div class="content">
+          <h2 class="section-title">Rapresent your idea with a smart Design</h2>
+          <p class="section-text">
+            Tasks accompanying and related to programming include: testing,
+            debugging, source code maintenance, implementation of build systems,
+            and management of derived artifacts, such as the machine code of
+            computer programs.
+          </p>
+          <button class="button" type="button">get started</button>
+        </div>
+        <img
+          src="./images/content-image-1.jpg"
+          alt="picture-1"
+          width="407"
+          height="582"
+          class="image-content"
+        />
       </div>
     </section>
 
@@ -95,51 +109,90 @@
 
     <section class="section">
       <div class="container">
-        <img src="./images/userpic-wrapper.jpg" alt="user-pic" />
-        <h3>our community</h3>
-        <p class="section-text">
-          A hacker is any skilled computer expert that uses their technical
-          knowledge to overcome a problem, but it can also mean a security
-          hacker in common language
-        </p>
-        <img src="./images/slider-item.jpg" alt="slider-item" />
-        <img src="./images/slider-item(1).jpg" alt="slider-item" />
+        <div class="content">
+          <img
+            src="./images/userpic.svg"
+            alt="user-pic"
+            width="45"
+            height="45"
+          />
+          <h2 class="section-secondary-title">our community</h2>
+          <p class="section-text">
+            A hacker is any skilled computer expert that uses their technical
+            knowledge to overcome a problem, but it can also mean a security
+            hacker in common language
+          </p>
+        </div>
+        <ul class="img-list list">
+          <li class="img-item">
+            <img src="./images/slider-item.jpg" alt="slider-item" />
+          </li>
+          <li class="img-item">
+            <img src="./images/slider-item-1.jpeg" alt="slider-item" />
+          </li>
+        </ul>
       </div>
     </section>
 
     <!-- section 3 -->
     <section class="section">
-      <div class="section container">
-        <img src="./images/content-image-2.jpg" alt="" />
-        <h2 class="setion-title">Implement right Code</h2>
-        <p class="section-text">
-          These might be considered part of the programming process, but often
-          the term software development is used for this larger process with the
-          term programming, implementation
-        </p>
+      <div class="container">
+        <img
+          src="./images/content-image-2.jpg"
+          alt=""
+          width="407"
+          height="582"
+          class="image-content"
+        />
+        <div class="content">
+          <h2 class="section-title">Implement right Code</h2>
+          <p class="section-text">
+            These might be considered part of the <b>programming process</b>,
+            but often the term software development is used for this larger
+            process with the term programming, implementation
+          </p>
 
-        <button class="button" type="button">Learn more</button>
+          <button class="button" type="button">Learn more</button>
+        </div>
       </div>
     </section>
 
     <!-- hero 2 -->
 
-    <div>
-      <h2>sign up for our newsletter</h2>
-      <input type="Email" />
-      <button type="button"></button>
+    <div class="secondary-hero">
+      <h2 class="secondary-hero-title">sign up for our newsletter</h2>
+      <input class="input" type="Email" placeholder="E-mail" />
+      <button class="secondary-hero-button" type="submit">
+        <svg class="check-icon">
+          <use href="./images/symbol-check.svg#icon-check-icon"></use>
+        </svg>
+      </button>
     </div>
 
     <!-- section 4 -->
     <section class="section">
-      <div class="container">
-        <h2 class="setion-title">Download the App</h2>
+      <div class="container contacts-container">
+        <h2 class="section-up-title">Download the App</h2>
         <p class="section-text">
           Machine code was the language of early programs, written in the
-          instruction set of the particular machine, often in binary notation.
+          instruction <br />set of the particular machine, often in binary
+          notation.
         </p>
-        <button class="button" type="button">apple store</button>
-        <button class="button" type="button">Play Market</button>
+        <div class="button-container">
+          <button class="button" type="button">
+            apple store
+            <svg class="apple-icon">
+              <use href="./images/symbol-defs.svg#icon-icon-apple"></use>
+            </svg>
+          </button>
+
+          <button class="button" type="button">
+            Play Market
+            <svg class="android-icon">
+              <use href="./images/symbol-defs.svg#icon-icon-android"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
 
