@@ -13,6 +13,7 @@
   --p-text-color: #4e4e4e;
   --black-bg-color: #000000;
   --button-color: #00afdb;
+  --button-hover-color: #009cc2;
   --secondary-bg-color: #f5f6f7;
   --color-gradient: rgba(21, 21, 22, 0.151);
   --footer-text-color: #818181;
@@ -154,7 +155,7 @@ img {
 /* hero */
 
 .hero {
-  /* height: 650px; */
+  height: 651px;
   max-width: 1600px;
   padding: 200px 0;
   margin-left: auto;
@@ -180,7 +181,7 @@ img {
   line-height: 95px;
 
   margin-top: 0;
-  margin-bottom: 51px;
+  margin-bottom: 20px;
 
   align-items: center;
   text-align: center;
@@ -196,7 +197,7 @@ img {
   line-height: 25px;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 51px;
+  margin-bottom: 20px;
   color: var(--primary-white-color);
 }
 
@@ -206,7 +207,7 @@ img {
   text-align: center;
 
   margin-top: 0;
-  margin-bottom: 183px;
+  margin-bottom: 100px;
 
   color: var(--primary-white-color);
   background-color: var(--button-color);
@@ -217,6 +218,13 @@ img {
   line-height: 1.14;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-hero:hover {
+  background-color: var(--button-hover-color);
+  color: white;
+  transform: scale(1.1);
 }
 
 /* logo */
@@ -259,51 +267,56 @@ img {
   fill: currentColor;
 }
 
-.apple-icon {
-  width: 20px;
-  height: 20px;
-
-  margin-left: 30px;
-  fill: currentColor;
-}
-.android-icon {
-  width: 20px;
-  height: 20px;
-
-  margin-left: 30px;
-  fill: currentColor;
-}
-
 /* buttons*/
-.button {
-  position: relative;
-  padding: 15px 47px;
-  display: inline-block;
-  text-align: center;
 
-  margin-right: 0;
-  margin-right: 0;
-
-  color: var(--primary-white-color);
-  background-color: var(--button-color);
-
-  border: 1px solid transparent;
-
-  font-weight: bold;
-  line-height: 1.14;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.button:first-child {
-  margin-right: 30px;
-}
-
-.button-container {
+.container-flex {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
+}
+
+.social-button {
+  border: none;
+  transition: transform 0.25s;
+  background-color: var(--button-color);
+  color: var(--primary-white-color);
+
+  width: 180px;
+  height: 50px;
+
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social-button a {
+  color: var(--primary-white-color);
+  text-decoration: none;
+}
+
+.button-item {
+  margin-right: 30px;
+}
+
+.social-button:hover {
+  background-color: var(--button-hover-color);
+  color: white;
+  transform: scale(1.1);
+}
+
+.social-button:hover a {
+  color: white;
+}
+
+.icon-social {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+
+  left: calc(50% - 20px / 2 - 0.5px);
+  top: calc(50% - 23px / 2 + 0.5px);
 }
 
 /* sections */
@@ -382,9 +395,9 @@ img {
 /* secondary hero */
 
 .secondary-hero {
-  /* height: 650px; */
+  height: 520px;
   max-width: 1600px;
-  padding: 300px 0;
+  padding: 200px 0;
   margin-left: auto;
   margin-right: auto;
 
@@ -397,15 +410,16 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  justify-items: center;
+
   text-align: center;
+  align-items: center;
 }
 
 .secondary-hero-title {
   margin-top: 0;
   margin-bottom: 20px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 1px;
@@ -418,9 +432,7 @@ img {
   width: 320px;
   height: 46px;
 
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 24px;
+  padding: 20px;
 
   font-size: 14px;
   font-style: normal;
@@ -428,7 +440,7 @@ img {
 
   color: var(--title-text-color);
 
-  border: none;
+  border: transparent;
 }
 
 .secondary-hero-button {
@@ -436,8 +448,15 @@ img {
   width: 66px;
   height: 46px;
 
-  border: none;
+  border: transparent;
   background-color: var(--button-color);
+  cursor: pointer;
+}
+
+.secondary-hero-button:hover {
+  background-color: var(--button-hover-color);
+  color: white;
+  transform: scale(1.05);
 }
 
 /* contacts container */
@@ -445,8 +464,8 @@ img {
 .contacts-container {
   display: block;
   align-items: center;
-
   text-align: center;
+  justify-content: center;
 }
 
 /* footer */
