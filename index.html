@@ -109,12 +109,13 @@
 
     <section class="section">
       <div class="container">
-        <div class="content">
+        <div class="section-content">
           <img
             src="./images/userpic.svg"
             alt="user-pic"
             width="45"
             height="45"
+            class="img-avatar"
           />
           <h2 class="section-secondary-title">our community</h2>
           <p class="section-text">
@@ -197,14 +198,22 @@
     </section>
 
     <!-- footer -->
-    <footer class="container">
-      <ul class="list">
-        <li>Credits</li>
-        <li>Privacy</li>
-        <li>Our teams</li>
-      </ul>
-      <a href="">logo</a>
-      <p>by TonYem for RSS at 2020</p>
+    <footer class="page-footer">
+      <nav>
+        <div class="container footer-nav">
+          <ul class="footer-site-nav list">
+            <li class="items"><a class="link" href="/">Credits</a></li>
+            <li class="items"><a class="link" href="/">Privacy</a></li>
+            <li class="items"><a class="link" href="/">Our teams</a></li>
+          </ul>
+          <a href="/" class="logo">
+            <svg class="icon-logo">
+              <use href="./images/symbol-defs.svg#icon-icon-logo"></use>
+            </svg>
+          </a>
+          <p class="footer-item">by TonYem for RSS at 2020</p>
+        </div>
+      </nav>
     </footer>
   </body>
 </html>
